@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff6b6b, #f8e71c);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2); /* Black with 20% transparency */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: left; /* Align text to the left inside the content */
+    margin-top: 20px;
+}
+
+.content1 {
+    margin-right: 20px; /* Space between content and image */
+}
+
+h2 {
+    text-align: center;
+}
+
+.cool-text {
+    font-size: 3em;
+    background: linear-gradient(90deg, #ff6b6b, #f8e71c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: textGlow 1.5s infinite alternate;
+}
+
+.cool-text2 {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, #ff6b6b, #f8e71c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 10px #f8e71c, 0 0 20px #f8e71c, 0 0 30px #f8e71c;
+    }
+    to {
+        text-shadow: 0 0 20px #ff6b6b, 0 0 30px #ff6b6b, 0 0 40px #ff6b6b;
+    }
+}
+
+button {
+    background: #3498db;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #2980b9;
+    transform: scale(1.1);
+}
+
+#counterDisplay {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.profile-image {
+    border-radius: 10px;
+    width: 150px; /* Adjust as needed */
+    height: auto;
+}
