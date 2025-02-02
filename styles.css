@@ -1,92 +1,340 @@
-body {
+/* General Reset / Box Sizing */
+* {
     margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #ff6b6b, #f8e71c);
-    font-family: 'Arial', sans-serif;
-    overflow: hidden;
-}
-
-.container {
-    text-align: center;
-    max-width: 800px;
-}
-
-.content-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.2); /* Black with 20% transparency */
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    text-align: left; /* Align text to the left inside the content */
-    margin-top: 20px;
-}
-
-.content1 {
-    margin-right: 20px; /* Space between content and image */
-}
-
-h2 {
-    text-align: center;
-}
-
-.cool-text {
-    font-size: 3em;
-    background: linear-gradient(90deg, #ff6b6b, #f8e71c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    animation: textGlow 1.5s infinite alternate;
-}
-
-.cool-text2 {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(90deg, #ff6b6b, #f8e71c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-@keyframes textGlow {
-    from {
-        text-shadow: 0 0 10px #f8e71c, 0 0 20px #f8e71c, 0 0 30px #f8e71c;
-    }
-    to {
-        text-shadow: 0 0 20px #ff6b6b, 0 0 30px #ff6b6b, 0 0 40px #ff6b6b;
-    }
-}
-
-button {
-    background: #3498db;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
-    margin-top: 20px;
-}
-
-button:hover {
-    background: #2980b9;
-    transform: scale(1.1);
-}
-
-#counterDisplay {
-    font-size: 1.2em;
-    margin-top: 10px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Font settings */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background: #fafafa;
+    line-height: 1.6;
+  }
+  
+  /* Navbar at the Top */
+  .navbar {
+    background: #333;
     color: #fff;
-}
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .nav-container .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-left: 1.5rem;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #9b59b6; /* Hover color to match the purple theme */
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #9b59b6, #ffffff);
+    padding: 60px 20px;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .hero-text {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .hero-text h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #f0f0f0;
+  }
+  
+  .hero-image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 4px solid #333;
+  }
+  
+  /* Section Headers */
+  .section-header {
+    text-align: left;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px 0 20px;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Education Section */
+  .education {
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
 
-.profile-image {
-    border-radius: 10px;
-    width: 150px; /* Adjust as needed */
-    height: auto;
-}
+  .education-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center; 
+    justify-content: space-between; 
+  }
+
+  /* Left text content */
+  .education-left {
+    flex: 1;
+    padding: 10px;
+  }
+
+  /* Right section with school logos */
+  .education-right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;  /* Aligns logos in a horizontal row */
+    justify-content: center;
+    gap: 20px;  /* Adds spacing between the logos */
+  }
+
+  /* Increase the size of school logos */
+  .school-logo {
+    width: 160px;  /* Adjust width to make logos slightly bigger */
+    height: auto;  /* Maintain aspect ratio */
+    object-fit: contain;
+  }
+
+  
+  /* Projects Section */
+  .projects {
+    margin-top: 20px;
+    padding-bottom: 40px; 
+  }
+
+  .project-card {
+    background: #fff;
+    max-width: 1100px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .project-card h3 {
+    margin-bottom: 10px;
+    color: #9b59b6;
+  }
+
+  .project-card p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+
+  .project-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  /* Increase the width and keep the aspect ratio by setting height to auto */
+  .project-images img {
+    width: 500px;        /* Adjust this to suit your needs (e.g., 400px, 600px, etc.) */
+    height: auto;        /* Maintains the aspect ratio */
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  
+  /* About Me Section */
+  .about-me {
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+  
+  .pet {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+    background: none; /* Remove white background */
+    border: none; /* Remove borders */
+    box-shadow: none; /* Remove shadow */
+  }
+  .my-passion {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+    background: none; /* Remove white background */
+    border: none; /* Remove borders */
+    box-shadow: none; /* Remove shadow */
+  }
+  
+  /* Pets Layout */
+  .pet-text {
+    flex: 1;
+    line-height: 1.6;
+  }
+  
+  .pet-text h4 {
+    margin-bottom: 10px;
+    color: #9b59b6;
+  }
+  
+  .pet-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  .pet-image {
+    width: 450px;
+    height: auto;  
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* My Passion */
+  .my-passion h3 {
+    margin-bottom: 15px;
+    color: #9b59b6;
+  }
+  
+  /* My Passion Section */
+  
+  /* The "Coding" word - center, flashy, and dynamic */
+  /* My Passion Section */
+  
+  /* The "Coding" word - center, flashy, and dynamic */
+  /* My Passion Section */
+  
+  /* The "Coding" word - center, flashy, and dynamic */
+  .coding {
+    text-align: center;             /* Center horizontally */
+    font-size: 3rem;                /* Large font size */
+    font-weight: 900;               /* Bold */
+    color: #ff5733;                 /* Initial color */
+    text-transform: uppercase;      /* Make it uppercase */
+    animation: colorPulse 2s infinite, scalePulse 1s infinite ease-in-out; /* Animations */
+    letter-spacing: 5px;            /* Spacing between letters */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 
+                 0 0 20px #ff5733, 
+                 0 0 30px #ff8c00; /* Glowing effect */
+    margin: 20px auto;              /* Space around */
+    display: block;                 /* Ensure it's on its own line */
+  }
+  
+  /* Rest of the passions - tiny and dull, each on a new line */
+  .my-passion ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px; /* Space below the flashy "Coding" */
+    text-align: center; /* Center the list */
+  }
+  
+
+  
+  /* Passion Images */
+  .passion-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;        /* Center the images */
+    gap: 15px;                      /* Space between images */
+    margin-top: 20px;               /* Space above images */
+  }
+  
+  .passion-images img {
+    width: 120px;                   /* Smaller image size */
+    height: 80px;
+    object-fit: cover;
+    filter: grayscale(100%);        /* Desaturate images */
+    opacity: 0.5;                   /* Make them less visible */
+    transition: transform 0.2s, opacity 0.2s; /* Add hover effect */
+  }
+  
+  .passion-images img:hover {
+    filter: grayscale(0%);          /* Restore color on hover */
+    opacity: 1;                     /* Restore full opacity */
+    transform: scale(1.1);          /* Slight zoom on hover */
+  }
+  
+  /* Animations */
+  
+  /* Color pulsing animation */
+  @keyframes colorPulse {
+    0% {
+      color: #ff5733;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 0 0 20px #ff5733, 0 0 30px #ff8c00;
+    }
+    50% {
+      color: #33ff57;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 0 0 20px #33ff57, 0 0 30px #8cff00;
+    }
+    100% {
+      color: #5733ff;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 0 0 20px #5733ff, 0 0 30px #8c00ff;
+    }
+  }
+  
+  /* Scale pulsing animation */
+  @keyframes scalePulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Slightly enlarge */
+    }
+  }
+  
