@@ -1,28 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jiangshan Ai's Website</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Optional Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1 class="cool-text">Welcome to My Cool Web Page</h1>
-        <div class="content-container">
-            <div class="content1">
-                <h2 class="cool-text">Who I am</h2>
-                <p class="cool-text2">
-                    My name is Jiangshan Ai. I am from Wuhan, China. I just graduated from New York University Tandon and am heading to University of Illinois Urbana-Champaign for my Master of Computer Science. Nice seeing you and nice you seeing me! On this page!
-                </p>
-            </div>
-            <div class="image-container">
-                <img src="./pic1.jpg" alt="Jiangshan Ai" class="profile-image">
-            </div>
-        </div>
-        <button id="counterBtn">Click Me</button>
-        <p id="counterDisplay">This button has been clicked 0 times.</p>
+
+  <!-- Navigation Bar at the Top -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Jiangshan Ai</div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#education">My Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about-me">About Me</a></li>
+      </ul>
     </div>
-    <script src="script.js"></script>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi! Welcome to my website!</h1>
+        <h2>I am Jiangshan Ai</h2>
+        <h3> jai3@illinois.edu
+            <br>
+            9176984635
+        </h3>
+      </div>
+      <div class="hero-image">
+        <img src="mypic.jpg" alt="Jiangshan Ai" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="section-header">
+        <h2>My Education</h2>
+      </div>
+      <div class="education-container">
+        <div class="education-left">
+          <p>
+            I am currently a Master of Computer Science student at the University of Illinois at Urbana-Champaign. 
+            <br><br>
+            I completed my undergraduate studies in Mathematics and Computer Science at New York University.
+          </p>
+        </div>
+        <div class="education-right">
+          <img src="uiucLogo.png" alt="UIUC Logo" class="school-logo">
+          <img src="nyuLogo.png" alt="NYU Logo" class="school-logo">
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="section-header">
+        <h2>Projects</h2>
+      </div>
+
+      <!-- Project 1: Rental System -->
+      <div class="project-card">
+        <h3>1. Rental System (Apartments, Roommates, and Furniture)</h3>
+        <p>
+          I designed a rental system that allows users to post and find apartments, roommates,
+          or secondhand furniture, and also chat directly with the owner. For this project, I used 
+          <strong>Spring Boot</strong> as the main backend framework and <strong>Vue 3</strong> for the frontend. 
+          <strong>Redis</strong> was utilized for user authorization and caching, while <strong>MySQL</strong> 
+          served as the primary database. The system follows RESTful conventions for basic CRUD operations.
+        </p>
+        <p>
+          Users can either log in or register on the login page; upon registration, a token is generated, 
+          stored in ThreadLocal and Redis, and then sent back to the frontend. 
+        </p>
+
+        <div class="project-images">
+          <img src="EL1.jpg" alt="Login Page Placeholder">
+        </div>
+        <p>
+          After logging in, a user selects a category (Finding a Place, Finding Roommates, or Secondhand Furniture), 
+          enters a location, and sees all relevant posts. Clicking on a post opens its detail page, where the user 
+          can “like” it or start a direct chat with the owner. Users can also create new posts by clicking on a 
+          floating button in the bottom-left corner.
+        </p>
+
+    
+        <div class="project-images">
+          <img src="EL2.jpg" alt="Posts Page Placeholder">
+          <img src="EL3.jpg" alt="Chat Page Placeholder">
+        </div>
+        <p>
+          In the profile section, users can edit their personal information or view all posts they have created 
+          or liked across the three categories.
+        </p>
+
+        <div class="project-images">
+          <img src="EL4.jpg" alt="Profile Page Placeholder">
+        </div>
+      </div>
+      <!-- Mini Spring Writing -->
+      <div class="project-card">
+        <h3>2. Mini Spring Writing</h3>
+        <p>
+          I am designing and implementing a lightweight Spring-like framework from scratch, replicating key features such as 
+          **bean creation, initialization, and dependency injection**. This project involves developing custom annotations 
+          like <strong>@ComponentScan</strong>, <strong>@Component</strong>, <strong>@Scope</strong>, and <strong>@Autowired</strong>, 
+          enabling component discovery and injection. Additionally, I implemented a **BeanPostProcessor** to introduce custom 
+          logic before and after bean initialization. The framework also integrates **Aspect-Oriented Programming (AOP)** to support 
+          **method interception and cross-cutting concerns**, allowing for modularized and maintainable code. Currently, I am working 
+          on enhancing Spring MVC by simplifying annotations for specific use cases, making development more streamlined.
+        </p>
+      </div>
+
+      <!-- Project 2: Chat System -->
+      <div class="project-card">
+        <h3>2. Chat System with Rich Features</h3>
+        <p>
+          I am building a chat system that allows users to send emojis, voice messages, and even transfer money.
+          There is also a camera feature to send pictures directly. This project is still under active development, 
+          and I'm continually adding new features.
+        </p>
+        <p>
+          <strong>Technologies used:</strong> 
+          <ul>
+            <li><strong>Go</strong> as the main programming language</li>
+            <li><strong>Gin Framework</strong> for building RESTful APIs quickly</li>
+            <li><strong>WebSocket</strong> for real-time communication</li>
+            <li><strong>GORM</strong> for ORM and database interaction</li>
+            <li><strong>Goroutines and Channels</strong> to handle concurrent tasks efficiently</li>
+          </ul>
+        </p>
+        <p>
+          One of the core advantages of Go is its lightweight concurrency model using goroutines and channels. 
+          This makes it easy to handle many simultaneous chat connections, ensuring responsive real-time messaging 
+          even under heavy load.
+        </p>
+      </div>
+
+      <!-- Project 3: Restaurant Suggestion System -->
+      <div class="project-card">
+        <h3>3. Restaurant Suggestion System</h3>
+        <p>
+          This was my first major project and served as my senior design project at NYU (completed as a group). 
+          The system recommends restaurants based on the user’s location and dish-style preferences, which are 
+          identified through a simple chatbot. This chatbot is not powered by advanced AI; rather, it parses 
+          user sentences and extracts key terms to find relevant dining options.
+        </p>
+
+        <div class="project-images">
+          <img src="HAAK2.jpg" alt="Main Page Placeholder">
+          <img src="HAAK1.jpg" alt="Chatbot Conversation Placeholder">
+        </div>
+        <p>
+          We also included a feature to send calendar notifications and email reminders about a selected restaurant. 
+          This functionality was implemented using APIs for email sending and schedule management.
+        </p>
+
+        <div class="project-images">
+          <img src="HAAK3.jpg" alt="Email Notification Placeholder">
+        </div>
+        <p>
+          Overall, it was a challenging yet enlightening project that introduced me to user interaction design, 
+          geolocation services, integrating external APIs, and implementing basic CRUD operations in a team setting.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="about-me">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <h3>My Pets</h3>
+      </div>
+
+      <!-- My Pets -->
+      <!-- Cats -->
+      <div class="pet pet-cat">
+        <div class="pet-text">
+          <h4>Mimi and Cherry the Cats</h4>
+          <p>
+            These are my cats, Cherry (left) and Mimi (right). I've been raising them for two years; 
+            they are the first pets I've ever adopted. Mimi is a calm gentleman who tends to pee 
+            everywhere (You have seen him in my graduation picture!), while Cherry is scared of any human beings including me, even after two years we spent together...
+          </p>
+        </div>
+        <div class="pet-img">
+          <img src="cats.jpg" alt="The Cats" class="pet-image">
+        </div>
+      </div>
+
+      <!-- Dog -->
+      <div class="pet pet-dog">
+        <div class="pet-img">
+          <img src="dog.jpg" alt="Usagi the Dog" class="pet-image">
+        </div>
+        <div class="pet-text">
+          <h4>Usagi the Dog</h4>
+          <p>
+            This is my girlfriend and I's mischievous corgi, Usagi. She loves food more than anything else and can 
+            be quite the troublemaker. However, she’s also the cutest little pup on the planet, 
+            as you can clearly see.
+          </p>
+        </div>
+      </div>
+
+      <!-- My Passion -->
+      <h3 class="section-header">My Passion</h3>
+      <div class="my-passion">
+        <!-- The flashy "Coding" -->
+        <div class="coding">Coding</div>
+        
+        <!-- The understated rest of the passions -->
+        <ul>
+          <li>And also basketball, boxing, and video games: League of Legends, Hearthstone, TFT, Baldur’s Gate, Dark Souls, and more</li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Jiangshan Ai. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional JavaScript (if you need interactions) -->
+  <script>
+    // Smooth scrolling for navbar links
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
