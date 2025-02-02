@@ -138,15 +138,15 @@
   .education-right {
     flex: 1;
     display: flex;
-    flex-direction: row;  /* Aligns logos in a horizontal row */
+    flex-direction: row; 
     justify-content: center;
-    gap: 20px;  /* Adds spacing between the logos */
+    gap: 20px;  
   }
 
   /* Increase the size of school logos */
   .school-logo {
-    width: 160px;  /* Adjust width to make logos slightly bigger */
-    height: auto;  /* Maintain aspect ratio */
+    width: 160px;  
+    height: auto; 
     object-fit: contain;
   }
 
@@ -183,10 +183,9 @@
     margin-top: 10px;
   }
 
-  /* Increase the width and keep the aspect ratio by setting height to auto */
   .project-images img {
-    width: 500px;        /* Adjust this to suit your needs (e.g., 400px, 600px, etc.) */
-    height: auto;        /* Maintains the aspect ratio */
+    width: 500px;        
+    height: auto;       
     object-fit: cover;
     border-radius: 5px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -206,18 +205,18 @@
     margin: 20px auto;
     padding: 20px;
     gap: 20px;
-    background: none; /* Remove white background */
-    border: none; /* Remove borders */
-    box-shadow: none; /* Remove shadow */
+    background: none; 
+    border: none; 
+    box-shadow: none;
   }
   .my-passion {
     max-width: 1100px;
     margin: 20px auto;
     padding: 20px;
     gap: 20px;
-    background: none; /* Remove white background */
-    border: none; /* Remove borders */
-    box-shadow: none; /* Remove shadow */
+    background: none; 
+    border: none; 
+    box-shadow: none; 
   }
   
   /* Pets Layout */
@@ -254,63 +253,30 @@
   
   /* My Passion Section */
   
-  /* The "Coding" word - center, flashy, and dynamic */
-  /* My Passion Section */
-  
-  /* The "Coding" word - center, flashy, and dynamic */
-  /* My Passion Section */
-  
-  /* The "Coding" word - center, flashy, and dynamic */
   .coding {
-    text-align: center;             /* Center horizontally */
-    font-size: 3rem;                /* Large font size */
-    font-weight: 900;               /* Bold */
-    color: #ff5733;                 /* Initial color */
-    text-transform: uppercase;      /* Make it uppercase */
-    animation: colorPulse 2s infinite, scalePulse 1s infinite ease-in-out; /* Animations */
-    letter-spacing: 5px;            /* Spacing between letters */
+    text-align: center;            
+    font-size: 3rem;                
+    font-weight: 900;             
+    color: #ff5733;                 
+    text-transform: uppercase;      
+    animation: colorPulse 2s infinite, scalePulse 1s infinite ease-in-out;
+    letter-spacing: 5px;           
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 
                  0 0 20px #ff5733, 
-                 0 0 30px #ff8c00; /* Glowing effect */
-    margin: 20px auto;              /* Space around */
-    display: block;                 /* Ensure it's on its own line */
+                 0 0 30px #ff8c00; 
+    margin: 20px auto;              
+    display: block;                 
   }
   
-  /* Rest of the passions - tiny and dull, each on a new line */
   .my-passion ul {
     list-style: none;
     padding-left: 0;
-    margin-top: 40px; /* Space below the flashy "Coding" */
-    text-align: center; /* Center the list */
+    margin-top: 40px; 
+    text-align: center; 
   }
   
 
-  
-  /* Passion Images */
-  .passion-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;        /* Center the images */
-    gap: 15px;                      /* Space between images */
-    margin-top: 20px;               /* Space above images */
-  }
-  
-  .passion-images img {
-    width: 120px;                   /* Smaller image size */
-    height: 80px;
-    object-fit: cover;
-    filter: grayscale(100%);        /* Desaturate images */
-    opacity: 0.5;                   /* Make them less visible */
-    transition: transform 0.2s, opacity 0.2s; /* Add hover effect */
-  }
-  
-  .passion-images img:hover {
-    filter: grayscale(0%);          /* Restore color on hover */
-    opacity: 1;                     /* Restore full opacity */
-    transform: scale(1.1);          /* Slight zoom on hover */
-  }
-  
-  /* Animations */
+
   
   /* Color pulsing animation */
   @keyframes colorPulse {
@@ -334,7 +300,7 @@
       transform: scale(1);
     }
     50% {
-      transform: scale(1.1); /* Slightly enlarge */
+      transform: scale(1.1); 
     }
   }
   
