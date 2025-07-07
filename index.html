@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jiangshan Ai's Website</title>
+
   <!-- Link to external CSS file -->
   <link rel="stylesheet" href="styles.css">
+
   <!-- Optional Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +15,15 @@
 </head>
 <body>
 
-  <!-- Navigation Bar at the Top -->
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="logo">Jiangshan Ai</div>
       <ul>
         <li><a href="#hero">Home</a></li>
         <li><a href="#education">My Education</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#internship">Internship Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#about-me">About Me</a></li>
       </ul>
     </div>
@@ -33,9 +35,9 @@
       <div class="hero-text">
         <h1>Hi! Welcome to my website!</h1>
         <h2>I am Jiangshan Ai</h2>
-        <h3> jai3@illinois.edu
-            <br>
-            9176984635
+        <h3>
+          jai3@illinois.edu<br>
+          917-698-4635
         </h3>
       </div>
       <div class="hero-image">
@@ -54,8 +56,7 @@
       <div class="education-container">
         <div class="education-left">
           <p>
-            I am currently a Master of Computer Science student at the University of Illinois at Urbana-Champaign. 
-            <br><br>
+            I am currently a Master of Computer Science student at the University of Illinois at Urbana-Champaign.<br><br>
             I completed my undergraduate studies in Mathematics and Computer Science at New York University.
           </p>
         </div>
@@ -66,47 +67,6 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <div class="section-header">
-        <h2>Projects</h2>
-      </div>
-
-      <!-- Project 1: Mini Spring Writing -->
-      <div class="project-card">
-        <h3>1. Mini Spring Writing</h3>
-        <p>
-          I am designing and implementing a lightweight Spring-like framework from scratch, replicating key features such as 
-          <strong>bean creation, initialization, and dependency injection</strong>. This project involves developing custom annotations 
-          like <strong>@ComponentScan</strong>, <strong>@Component</strong>, <strong>@Scope</strong>, and <strong>@Autowired</strong>, 
-          enabling component discovery and injection. Additionally, I implemented a <strong>BeanPostProcessor</strong> to introduce custom 
-          logic before and after bean initialization. The framework also integrates <strong>Aspect-Oriented Programming (AOP)</strong> to support 
-          <strong>method interception and cross-cutting concerns</strong>, allowing for modularized and maintainable code. Currently, I am working 
-          on enhancing Spring MVC by simplifying annotations for specific use cases, making development more streamlined.
-        </p>
-      </div>
-
-      <!-- Project 2: Restaurant Suggestion System -->
-      <div class="project-card">
-        <h3>2. Restaurant Suggestion System</h3>
-        <p>
-          This was my first major project and served as my senior design project at NYU (completed as a group). 
-          The system recommends restaurants based on the user’s location and dish-style preferences, which are 
-          identified through a simple chatbot. This chatbot is not powered by advanced AI; rather, it parses 
-          user sentences and extracts key terms to find relevant dining options.
-        </p>
-
-        <p>
-          We also included a feature to send calendar notifications and email reminders about a selected restaurant. 
-          This functionality was implemented using APIs for email sending and schedule management.
-        </p>
-        <p>
-          Overall, it was a challenging yet enlightening project that introduced me to user interaction design, 
-          geolocation services, integrating external APIs, and implementing basic CRUD operations in a team setting.
-        </p>
-      </div>
-    </section>
-
     <!-- Internship Experience Section -->
     <section id="internship" class="internship">
       <div class="section-header">
@@ -114,32 +74,55 @@
       </div>
 
       <div class="internship-card">
-        <h3>Software Engineer Intern | Eth Tech <span class="intern-duration">May 2025 - July 2025, Newark, CA</span></h3>
+        <h3>Software Engineer Intern | Eth Tech <span class="intern-duration">May 2025 – Jul 2025, Newark CA</span></h3>
         <ul>
-          <li>Designed and implemented a Spring Boot-based product catalog microservice, containerized with Docker and deployed on Azure Kubernetes Service (AKS) for scalable cloud-native operations.</li>
-          <li>Built secure RESTful APIs for product listing, search, and inventory updates, incorporating Azure API Management for rate limiting and OAuth2 authentication.</li>
-          <li>Integrated Azure SQL Database for transactional data and Azure Redis Cache to enhance product retrieval speed and reduce backend load.</li>
-          <li>Configured CI/CD pipelines in Azure DevOps to automate builds and deployments, and enabled real-time monitoring with Azure Monitor for performance tracking and issue diagnosis.</li>
+          <li>Designed and implemented a Spring Boot-based product catalog microservice, containerized with Docker and deployed on AKS for cloud-native scalability.</li>
+          <li>Built secure RESTful APIs, adding rate-limiting & OAuth2 via Azure API Management.</li>
+          <li>Integrated Azure SQL Database and Azure Redis Cache to accelerate product retrieval.</li>
+          <li>Automated CI/CD in Azure DevOps and enabled real-time monitoring with Azure Monitor.</li>
         </ul>
       </div>
 
       <div class="internship-card">
-        <h3>Software Engineering Intern | NextTier <span class="intern-duration">Jun 2024 - Aug 2024, Sacramento, CA</span></h3>
+        <h3>Software Engineering Intern | NextTier <span class="intern-duration">Jun 2024 – Aug 2024, Sacramento CA</span></h3>
         <ul>
-          <li>Participated in Order & Messaging microservices for a short-term-lease platform using Spring Boot and PostgreSQL, exposing robust RESTful APIs to handle offers, confirmations, and real-time in-app messaging.</li>
-          <li>Architected and migrated to an event-driven system with RabbitMQ using fan-out and dead-letter queues, enhancing peak-hour throughput by 4× and ensuring reliable message delivery and order processing.</li>
-          <li>Implemented Redis caching for the 30 most-viewed posts and integrated idempotency keys, reducing page load latency from 1s to 195ms and ensuring safe retries during high-concurrency traffic.</li>
-          <li>Containerized services with Docker and deployed on AWS ECS, incorporating CI/CD pipelines via GitHub Actions to automate testing, build, and deployment workflows.</li>
+          <li>Contributed to Order & Messaging microservices (Spring Boot + PostgreSQL) exposing robust REST APIs for offers, confirmations, and in-app messaging.</li>
+          <li>Migrated to RabbitMQ-based event-driven architecture with fan-out & DLQs, boosting peak-hour throughput 4×.</li>
+          <li>Added Redis caching for top 30 posts and idempotency keys, cutting load time to 195 ms.</li>
+          <li>Containerized services with Docker and deployed to AWS ECS via GitHub Actions pipelines.</li>
         </ul>
       </div>
 
       <div class="internship-card">
-        <h3>Software Engineering Intern | iSoftStone <span class="intern-duration">Jun 2023 - Aug 2023, Seattle, WA</span></h3>
+        <h3>Software Engineering Intern | iSoftStone <span class="intern-duration">Jun 2023 – Aug 2023, Seattle WA</span></h3>
         <ul>
-          <li>Built a scalable document transcription feature by integrating Amazon Transcribe into the Nuxeo platform using AWS SDK and event-driven architecture to automate audio-to-text workflows.</li>
-          <li>Developed backend event listeners to trigger transcription processes automatically upon document uploads, improving system automation and accessibility.</li>
-          <li>Designed and implemented frontend components with Polymer for a consistent user experience and seamless integration into Nuxeo’s single document view.</li>
+          <li>Integrated Amazon Transcribe into Nuxeo for automated audio-to-text document workflows.</li>
+          <li>Built backend event listeners triggering transcription on document upload, improving accessibility.</li>
+          <li>Developed Polymer front-end components for seamless embedding in Nuxeo’s single-document view.</li>
         </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="section-header">
+        <h2>Projects</h2>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>1. Mini Spring Writing</h3>
+        <p>
+          Designing and implementing a lightweight Spring-like framework from scratch, replicating key features such as <strong>bean creation</strong>, <strong>dependency injection</strong>, and custom annotations (<code>@ComponentScan</code>, <code>@Component</code>, <code>@Scope</code>, <code>@Autowired</code>). Includes <strong>AOP</strong> support with <strong>BeanPostProcessor</strong> hooks and ongoing work to streamline Spring MVC annotations.
+        </p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>2. Restaurant Suggestion System</h3>
+        <p>
+          Senior design project (NYU): recommends restaurants based on user location and cuisine preferences gathered through a simple rule-based chatbot. Integrated calendar/email reminders via external APIs and tackled geolocation services, user-interaction design, and CRUD back-end in a team setting.
+        </p>
       </div>
     </section>
 
@@ -150,15 +133,12 @@
         <h3>My Pets</h3>
       </div>
 
-      <!-- My Pets -->
       <!-- Cats -->
       <div class="pet pet-cat">
         <div class="pet-text">
           <h4>Mimi and Cherry the Cats</h4>
           <p>
-            These are my cats, Cherry (left) and Mimi (right). I've been raising them for two years; 
-            they are the first pets I've ever adopted. Mimi is a calm gentleman who tends to pee 
-            everywhere (You have seen him in my graduation picture!), while Cherry is scared of any human beings including me, even after two years we spent together...
+            Cherry (left) and Mimi (right) have been with me for two years. Mimi is a calm gentleman—though prone to mischief—while Cherry remains shy around humans, even me!
           </p>
         </div>
         <div class="pet-img">
@@ -174,25 +154,19 @@
         <div class="pet-text">
           <h4>Usagi the Dog</h4>
           <p>
-            This is my girlfriend and I's mischievous corgi, Usagi. She loves food more than anything else and can 
-            be quite the troublemaker. However, she’s also the cutest little pup on the planet, 
-            as you can clearly see.
+            Usagi is my girlfriend’s and my mischievous corgi. She adores food, loves trouble, and is undeniably adorable.
           </p>
         </div>
       </div>
 
-      <!-- My Passion -->
+      <!-- Passions -->
       <h3 class="section-header">My Passion</h3>
       <div class="my-passion">
-        <!-- The flashy "Coding" -->
         <div class="coding">Coding</div>
-        
-        <!-- The understated rest of the passions -->
         <ul>
-          <li>And also basketball, boxing, and video games: League of Legends, Hearthstone, TFT, Baldur’s Gate, Dark Souls, and more</li>
+          <li>Basketball, boxing, and games: League of Legends, Hearthstone, TFT, Baldur’s Gate, Dark Souls, and more</li>
         </ul>
       </div>
-
     </section>
   </main>
 
@@ -201,17 +175,13 @@
     <p>&copy; 2025 Jiangshan Ai. All rights reserved.</p>
   </footer>
 
-  <!-- Optional JavaScript (if you need interactions) -->
+  <!-- Smooth scrolling -->
   <script>
-    // Smooth scrolling for navbar links
     document.querySelectorAll('.navbar a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
       });
     });
   </script>
