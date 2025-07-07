@@ -1,306 +1,192 @@
 /* General Reset / Box Sizing */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body and Font settings */
-  body {
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    background: #fafafa;
-    line-height: 1.6;
-  }
-  
-  /* Navbar at the Top */
-  .navbar {
-    background: #333;
-    color: #fff;
-    padding: 0.5rem 1rem;
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  
-  .nav-container .logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  .navbar li {
-    margin-left: 1.5rem;
-  }
-  
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    color: #9b59b6; /* Hover color to match the purple theme */
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: linear-gradient(to right, #9b59b6, #ffffff);
-    padding: 60px 20px;
-  }
-  
-  .hero-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  
-  .hero-text {
-    flex: 1;
-    min-width: 300px;
-    margin-right: 20px;
-  }
-  
-  .hero-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #fff;
-  }
-  
-  .hero-text h2 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: #f0f0f0;
-  }
-  
-  .hero-image {
-    flex: 1;
-    min-width: 250px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .hero-image img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 100%;
-    border: 4px solid #333;
-  }
-  
-  /* Section Headers */
-  .section-header {
-    text-align: left;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 40px 20px 0 20px;
-  }
-  
-  .section-header h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  /* Education Section */
-  .education {
-    margin-top: 20px;
-    padding-bottom: 40px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .education-container {
-    display: flex;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    align-items: center; 
-    justify-content: space-between; 
-  }
+/* Body and Font */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background: #fafafa;
+  line-height: 1.6;
+}
 
-  /* Left text content */
-  .education-left {
-    flex: 1;
-    padding: 10px;
-  }
+/* Navbar */
+.navbar {
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
 
-  /* Right section with school logos */
-  .education-right {
-    flex: 1;
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    gap: 20px;  
-  }
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
-  /* Increase the size of school logos */
-  .school-logo {
-    width: 160px;  
-    height: auto; 
-    object-fit: contain;
-  }
+.nav-container .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 
-  
-  /* Projects Section */
-  .projects {
-    margin-top: 20px;
-    padding-bottom: 40px; 
-  }
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
 
-  .project-card {
-    background: #fff;
-    max-width: 1100px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
+.navbar li { margin-left: 1.5rem; }
 
-  .project-card h3 {
-    margin-bottom: 10px;
-    color: #9b59b6;
-  }
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar a:hover { color: #9b59b6; }
 
-  .project-card p {
-    line-height: 1.7;
-    margin-bottom: 15px;
-  }
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #9b59b6, #ffffff);
+  padding: 60px 20px;
+}
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+.hero-text h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #fff; }
+.hero-text h2 { font-size: 1.8rem; font-weight: 400; color: #f0f0f0; }
+.hero-image { flex: 1; min-width: 250px; display: flex; justify-content: center; }
+.hero-image img {
+  width: 250px; height: 250px; object-fit: cover; border-radius: 100%; border: 4px solid #333;
+}
 
-  .project-images {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
+/* Section Headers */
+.section-header {
+  text-align: left;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 0 20px;
+}
+.section-header h2 { font-size: 2rem; margin-bottom: 10px; color: #333; }
 
-  .project-images img {
-    width: 500px;        
-    height: auto;       
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  }
+/* Education */
+.education { margin-top: 20px; padding-bottom: 40px; }
+.education-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.education-left { flex: 1; padding: 10px; }
+.education-right {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.school-logo { width: 160px; height: auto; object-fit: contain; }
 
-  
-  /* About Me Section */
-  .about-me {
-    margin-top: 20px;
-    padding-bottom: 40px;
-  }
-  
-  .pet {
-    display: flex;
-    align-items: center;
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
-    gap: 20px;
-    background: none; 
-    border: none; 
-    box-shadow: none;
-  }
-  .my-passion {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px;
-    gap: 20px;
-    background: none; 
-    border: none; 
-    box-shadow: none; 
-  }
-  
-  /* Pets Layout */
-  .pet-text {
-    flex: 1;
-    line-height: 1.6;
-  }
-  
-  .pet-text h4 {
-    margin-bottom: 10px;
-    color: #9b59b6;
-  }
-  
-  .pet-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
+/* Internship */
+.internship { margin-top: 20px; padding-bottom: 40px; }
+.internship-card {
+  background: #fff;
+  max-width: 1100px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+.internship-card h3 { margin-bottom: 10px; color: #9b59b6; }
+.intern-duration {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #555;
+}
+.internship-card ul {
+  list-style: disc;
+  margin-left: 1.25rem;
+  line-height: 1.7;
+}
 
+/* Projects */
+.projects { margin-top: 20px; padding-bottom: 40px; }
+.project-card {
+  background: #fff;
+  max-width: 1100px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+.project-card h3 { margin-bottom: 10px; color: #9b59b6; }
+.project-card p { line-height: 1.7; margin-bottom: 15px; }
 
+/* About Me & Pets */
+.about-me   { margin-top: 20px; padding-bottom: 40px; }
+.pet {
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  gap: 20px;
+}
+.pet-text { flex: 1; line-height: 1.6; }
+.pet-text h4 { margin-bottom: 10px; color: #9b59b6; }
+.pet-img { flex: 1; display: flex; justify-content: center; }
+.pet-image { width: 450px; height: auto; object-fit: cover; border-radius: 5px; }
 
-  .pet-image {
-    width: 450px;
-    height: auto;  
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  
-  /* My Passion */
-  .my-passion h3 {
-    margin-bottom: 15px;
-    color: #9b59b6;
-  }
-  
-  /* My Passion Section */
-  
-  .coding {
-    text-align: center;            
-    font-size: 3rem;                
-    font-weight: 900;             
-    color: #ff5733;                 
-    text-transform: uppercase;      
-    animation: colorPulse 2s infinite, scalePulse 1s infinite ease-in-out;
-    letter-spacing: 5px;           
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 
-                 0 0 20px #ff5733, 
-                 0 0 30px #ff8c00; 
-    margin: 20px auto;              
-    display: block;                 
-  }
-  
-  .my-passion ul {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 40px; 
-    text-align: center; 
-  }
-  
+/* My Passion */
+.my-passion { max-width: 1100px; margin: 20px auto; padding: 20px; }
+.coding {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ff5733;
+  text-transform: uppercase;
+  animation: colorPulse 2s infinite, scalePulse 1s infinite ease-in-out;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.4), 0 0 20px #ff5733, 0 0 30px #ff8c00;
+  margin: 20px auto;
+  display: block;
+}
+.my-passion ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 40px;
+  text-align: center;
+}
 
+/* Animations */
+@keyframes colorPulse {
+  0%   { color: #ff5733; text-shadow: 3px 3px 10px rgba(0,0,0,0.4),0 0 20px #ff5733,0 0 30px #ff8c00; }
+  50%  { color: #33ff57; text-shadow: 3px 3px 10px rgba(0,0,0,0.4),0 0 20px #33ff57,0 0 30px #8cff00; }
+  100% { color: #5733ff; text-shadow: 3px 3px 10px rgba(0,0,0,0.4),0 0 20px #5733ff,0 0 30px #8c00ff; }
+}
+@keyframes scalePulse {
+  0%,100% { transform: scale(1); }
+  50%     { transform: scale(1.1); }
+}
 
-  
-  /* Color pulsing animation */
-  @keyframes colorPulse {
-    0% {
-      color: #ff5733;
-      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 0 0 20px #ff5733, 0 0 30px #ff8c00;
-    }
-    50% {
-      color: #33ff57;
-      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 0 0 20px #33ff57, 0 0 30px #8cff00;
-    }
-    100% {
-      color: #5733ff;
-      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 0 0 20px #5733ff, 0 0 30px #8c00ff;
-    }
-  }
-  
-  /* Scale pulsing animation */
-  @keyframes scalePulse {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1); 
-    }
-  }
-  
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
