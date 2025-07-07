@@ -21,6 +21,7 @@
         <li><a href="#hero">Home</a></li>
         <li><a href="#education">My Education</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship">Internship Experience</a></li>
         <li><a href="#about-me">About Me</a></li>
       </ul>
     </div>
@@ -71,87 +72,23 @@
         <h2>Projects</h2>
       </div>
 
-      <!-- Project 1: Rental System -->
+      <!-- Project 1: Mini Spring Writing -->
       <div class="project-card">
-        <h3>1. Rental System (Apartments, Roommates, and Furniture)</h3>
-        <p>
-          I designed a rental system that allows users to post and find apartments, roommates,
-          or secondhand furniture, and also chat directly with the owner. For this project, I used 
-          <strong>Spring Boot</strong> as the main backend framework and <strong>Vue 3</strong> for the frontend. 
-          <strong>Redis</strong> was utilized for user authorization and caching, while <strong>MySQL</strong> 
-          served as the primary database. The system follows RESTful conventions for basic CRUD operations.
-        </p>
-        <p>
-          Users can either log in or register on the login page; upon registration, a token is generated, 
-          stored in ThreadLocal and Redis, and then sent back to the frontend. 
-        </p>
-
-        <div class="project-images">
-          <img src="EL1.jpg" alt="Login Page Placeholder">
-        </div>
-        <p>
-          After logging in, a user selects a category (Finding a Place, Finding Roommates, or Secondhand Furniture), 
-          enters a location, and sees all relevant posts. Clicking on a post opens its detail page, where the user 
-          can “like” it or start a direct chat with the owner. Users can also create new posts by clicking on a 
-          floating button in the bottom-left corner.
-        </p>
-
-    
-        <div class="project-images">
-          <img src="EL2.jpg" alt="Posts Page Placeholder">
-          <img src="EL3.jpg" alt="Chat Page Placeholder">
-        </div>
-        <p>
-          In the profile section, users can edit their personal information or view all posts they have created 
-          or liked across the three categories.
-        </p>
-
-        <div class="project-images">
-          <img src="EL4.jpg" alt="Profile Page Placeholder">
-        </div>
-      </div>
-      <!-- Mini Spring Writing -->
-      <div class="project-card">
-        <h3>2. Mini Spring Writing</h3>
+        <h3>1. Mini Spring Writing</h3>
         <p>
           I am designing and implementing a lightweight Spring-like framework from scratch, replicating key features such as 
-          **bean creation, initialization, and dependency injection**. This project involves developing custom annotations 
+          <strong>bean creation, initialization, and dependency injection</strong>. This project involves developing custom annotations 
           like <strong>@ComponentScan</strong>, <strong>@Component</strong>, <strong>@Scope</strong>, and <strong>@Autowired</strong>, 
-          enabling component discovery and injection. Additionally, I implemented a **BeanPostProcessor** to introduce custom 
-          logic before and after bean initialization. The framework also integrates **Aspect-Oriented Programming (AOP)** to support 
-          **method interception and cross-cutting concerns**, allowing for modularized and maintainable code. Currently, I am working 
+          enabling component discovery and injection. Additionally, I implemented a <strong>BeanPostProcessor</strong> to introduce custom 
+          logic before and after bean initialization. The framework also integrates <strong>Aspect-Oriented Programming (AOP)</strong> to support 
+          <strong>method interception and cross-cutting concerns</strong>, allowing for modularized and maintainable code. Currently, I am working 
           on enhancing Spring MVC by simplifying annotations for specific use cases, making development more streamlined.
         </p>
       </div>
 
-      <!-- Project 2: Chat System -->
+      <!-- Project 2: Restaurant Suggestion System -->
       <div class="project-card">
-        <h3>2. Chat System with Rich Features</h3>
-        <p>
-          I am building a chat system that allows users to send emojis, voice messages, and even transfer money.
-          There is also a camera feature to send pictures directly. This project is still under active development, 
-          and I'm continually adding new features.
-        </p>
-        <p>
-          <strong>Technologies used:</strong> 
-          <ul>
-            <li><strong>Go</strong> as the main programming language</li>
-            <li><strong>Gin Framework</strong> for building RESTful APIs quickly</li>
-            <li><strong>WebSocket</strong> for real-time communication</li>
-            <li><strong>GORM</strong> for ORM and database interaction</li>
-            <li><strong>Goroutines and Channels</strong> to handle concurrent tasks efficiently</li>
-          </ul>
-        </p>
-        <p>
-          One of the core advantages of Go is its lightweight concurrency model using goroutines and channels. 
-          This makes it easy to handle many simultaneous chat connections, ensuring responsive real-time messaging 
-          even under heavy load.
-        </p>
-      </div>
-
-      <!-- Project 3: Restaurant Suggestion System -->
-      <div class="project-card">
-        <h3>3. Restaurant Suggestion System</h3>
+        <h3>2. Restaurant Suggestion System</h3>
         <p>
           This was my first major project and served as my senior design project at NYU (completed as a group). 
           The system recommends restaurants based on the user’s location and dish-style preferences, which are 
@@ -159,22 +96,50 @@
           user sentences and extracts key terms to find relevant dining options.
         </p>
 
-        <div class="project-images">
-          <img src="HAAK2.jpg" alt="Main Page Placeholder">
-          <img src="HAAK1.jpg" alt="Chatbot Conversation Placeholder">
-        </div>
         <p>
           We also included a feature to send calendar notifications and email reminders about a selected restaurant. 
           This functionality was implemented using APIs for email sending and schedule management.
         </p>
-
-        <div class="project-images">
-          <img src="HAAK3.jpg" alt="Email Notification Placeholder">
-        </div>
         <p>
           Overall, it was a challenging yet enlightening project that introduced me to user interaction design, 
           geolocation services, integrating external APIs, and implementing basic CRUD operations in a team setting.
         </p>
+      </div>
+    </section>
+
+    <!-- Internship Experience Section -->
+    <section id="internship" class="internship">
+      <div class="section-header">
+        <h2>Internship Experience</h2>
+      </div>
+
+      <div class="internship-card">
+        <h3>Software Engineer Intern | Eth Tech <span class="intern-duration">May 2025 - July 2025, Newark, CA</span></h3>
+        <ul>
+          <li>Designed and implemented a Spring Boot-based product catalog microservice, containerized with Docker and deployed on Azure Kubernetes Service (AKS) for scalable cloud-native operations.</li>
+          <li>Built secure RESTful APIs for product listing, search, and inventory updates, incorporating Azure API Management for rate limiting and OAuth2 authentication.</li>
+          <li>Integrated Azure SQL Database for transactional data and Azure Redis Cache to enhance product retrieval speed and reduce backend load.</li>
+          <li>Configured CI/CD pipelines in Azure DevOps to automate builds and deployments, and enabled real-time monitoring with Azure Monitor for performance tracking and issue diagnosis.</li>
+        </ul>
+      </div>
+
+      <div class="internship-card">
+        <h3>Software Engineering Intern | NextTier <span class="intern-duration">Jun 2024 - Aug 2024, Sacramento, CA</span></h3>
+        <ul>
+          <li>Participated in Order & Messaging microservices for a short-term-lease platform using Spring Boot and PostgreSQL, exposing robust RESTful APIs to handle offers, confirmations, and real-time in-app messaging.</li>
+          <li>Architected and migrated to an event-driven system with RabbitMQ using fan-out and dead-letter queues, enhancing peak-hour throughput by 4× and ensuring reliable message delivery and order processing.</li>
+          <li>Implemented Redis caching for the 30 most-viewed posts and integrated idempotency keys, reducing page load latency from 1s to 195ms and ensuring safe retries during high-concurrency traffic.</li>
+          <li>Containerized services with Docker and deployed on AWS ECS, incorporating CI/CD pipelines via GitHub Actions to automate testing, build, and deployment workflows.</li>
+        </ul>
+      </div>
+
+      <div class="internship-card">
+        <h3>Software Engineering Intern | iSoftStone <span class="intern-duration">Jun 2023 - Aug 2023, Seattle, WA</span></h3>
+        <ul>
+          <li>Built a scalable document transcription feature by integrating Amazon Transcribe into the Nuxeo platform using AWS SDK and event-driven architecture to automate audio-to-text workflows.</li>
+          <li>Developed backend event listeners to trigger transcription processes automatically upon document uploads, improving system automation and accessibility.</li>
+          <li>Designed and implemented frontend components with Polymer for a consistent user experience and seamless integration into Nuxeo’s single document view.</li>
+        </ul>
       </div>
     </section>
 
